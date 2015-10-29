@@ -1,0 +1,76 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{5}{chapter.1}
+\contentsline {section}{\numberline {1.1}Context}{5}{section.1.1}
+\contentsline {section}{\numberline {1.2}Business case assumption}{5}{section.1.2}
+\contentsline {section}{\numberline {1.3}Stakeholders}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Users}{6}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Customers}{6}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Architect}{6}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.4}On-site maintenance}{7}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.5}Quality Care{} - Technical}{7}{subsection.1.3.5}
+\contentsline {subsection}{\numberline {1.3.6}Quality Care{} - Non-technical}{7}{subsection.1.3.6}
+\contentsline {subsection}{\numberline {1.3.7}Manufacturing}{8}{subsection.1.3.7}
+\contentsline {subsection}{\numberline {1.3.8}Future stakeholders}{8}{subsection.1.3.8}
+\contentsline {chapter}{\numberline {2}System overview}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}High level requirements}{9}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Medical assistance}{9}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Social interaction}{9}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Support in everyday life}{9}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}Main functionality}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}M - Provide the right pills at the right time}{10}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}M - Contact relatives/nurses}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}M - Detect emotional state}{10}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}M - Health monitoring}{10}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}S - Hold simple conversation}{10}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}S - Video monitoring}{10}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}C - Home automation}{11}{subsection.2.2.7}
+\contentsline {section}{\numberline {2.3}Cloud Robotics}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Environment}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Robotic advantages}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Single control unit}{12}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Risks}{12}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Example scenarios}{12}{subsection.2.3.5}
+\contentsline {chapter}{\numberline {3}System decomposition}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Architectural views}{13}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Logical view}{14}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Process view}{15}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Implementation view}{16}{subsection.3.1.3}
+\contentsline {subsubsection}{\nonumberline Programming}{16}{section*.6}
+\contentsline {subsubsection}{\nonumberline File locations}{16}{section*.7}
+\contentsline {subsubsection}{\nonumberline Version Control System}{17}{section*.8}
+\contentsline {subsubsection}{\nonumberline Release and version management}{17}{section*.9}
+\contentsline {subsubsection}{\nonumberline Development Environment}{18}{section*.10}
+\contentsline {subsubsection}{\nonumberline Libraries}{18}{section*.11}
+\contentsline {subsection}{\numberline {3.1.4}Deployment view}{19}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Use Case view}{21}{subsection.3.1.5}
+\contentsline {subsubsection}{\nonumberline Use Case diagram}{21}{section*.12}
+\contentsline {subsubsection}{\nonumberline Use case: medication management}{22}{section*.13}
+\contentsline {subsubsection}{\nonumberline Use case: suggest social activity}{23}{section*.14}
+\contentsline {section}{\numberline {3.2}Monitoring Module}{24}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Needs}{25}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Quality Attributes}{26}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Measurable's}{27}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}System 1: Heart rate collection}{28}{section.3.3}
+\contentsline {subsubsection}{\nonumberline Scenarios}{28}{section*.15}
+\contentsline {subsubsection}{\nonumberline Tactics}{30}{section*.16}
+\contentsline {section}{\numberline {3.4}System 2: Cardiac arrest alarm}{39}{section.3.4}
+\contentsline {subsubsection}{\nonumberline Scenarios}{39}{section*.17}
+\contentsline {subsubsection}{\nonumberline Tactics}{41}{section*.18}
+\contentsline {section}{\numberline {3.5}System overview}{46}{section.3.5}
+\contentsline {chapter}{\numberline {4}References}{47}{chapter.4}
+\contentsline {chapter}{\numberline {A}Reference Architectures}{49}{appendix.A}
+\contentsline {section}{\numberline {A.1}2013 RAM Conference}{49}{section.A.1}
+\contentsline {section}{\numberline {A.2}Safety Framework}{50}{section.A.2}
+\contentsline {chapter}{\numberline {B}Reflection on Pipe Filters implementation}{52}{appendix.B}
+\contentsline {chapter}{\numberline {C}Architectural Patterns and Styles}{53}{appendix.C}
+\contentsline {section}{\numberline {C.1}Client-Server}{53}{section.C.1}
+\contentsline {section}{\numberline {C.2}Model, View, Controller (MVC)}{54}{section.C.2}
+\contentsline {section}{\numberline {C.3}Pipes and Filters}{54}{section.C.3}
+\contentsline {section}{\numberline {C.4}Shared-Data}{55}{section.C.4}
+\contentsline {chapter}{\numberline {D}Review}{56}{appendix.D}
+\contentsline {section}{\numberline {D.1}Review goal}{56}{section.D.1}
+\contentsline {section}{\numberline {D.2}Recieved feedback}{56}{section.D.2}
+\contentsline {subsection}{\numberline {D.2.1}System 1}{56}{subsection.D.2.1}
+\contentsline {subsection}{\numberline {D.2.2}System 2}{58}{subsection.D.2.2}
+\contentsline {chapter}{\numberline {E}Thought process}{59}{appendix.E}
+\contentsline {section}{\numberline {E.1}Mind map high level requirements and functional requirements}{59}{section.E.1}

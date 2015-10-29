@@ -1,0 +1,28 @@
+\documentclass[11pt,a4paper,english]{uvamath}
+\usepackage[english]{babel}
+
+\usepackage{amsmath, amsfonts, amssymb, a4wide, fancyhdr, lineno, graphicx, epsfig, soul, color, hyperref}
+\usepackage[square, numbers]{natbib}
+
+% Running line numbers:
+\linenumbers
+% Number only every 5:th line:
+\modulolinenumbers[5]
+
+%Nodig om een bibliography midden in het artikel te zetten, ipv aan het einde zoals eigenlijk gebruikelijk is
+\renewcommand{\bibsection}{}
+
+% TODO command
+\newcommand{\todo}[1]{
+    \hl{#1}
+}
+
+% The things that should be filled in by each group, depending on their situation, are written in a todo command, \todo{like this text}. All text in normal the normal font, is applicable for any group. However, everyone is free to adapt any text, and it is even suggested to look at all text critically and make changes if needed.
+
+% Project specific commands
+\author{Tom van Duist \& Kevin van den Bekerom}
+
+\newcommand{\projectname}{\todo{Project Name}\ }
+
+
+\newcommand{\aanpassen}[1]{ {\sethlcolor{green} \hl{#1}} }
