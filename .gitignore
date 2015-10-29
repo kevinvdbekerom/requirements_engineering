@@ -1,0 +1,11 @@
+rd.pdf
+*.aux
+*.out
+*.synctex.gz
+*.synctex.gz(busy)
+*.toc
+*.log
+*.bbl
+*.blg
+._*
+System Report.txt
