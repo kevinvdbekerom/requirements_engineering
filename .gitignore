@@ -1,4 +1,4 @@
-rd/rd.pdf
+/Documentation/*/*.pdf
 *.aux
 *.out
 *.synctex.gz
