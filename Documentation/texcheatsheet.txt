@@ -1,0 +1,12 @@
+Bullet list:
+
+\begin{itemize}
+	\item The first item
+\end{itemize}
+
+
+Numbered bullet list:
+
+\begin{enumerate}
+  \item The first item
+\end{enumerate}
