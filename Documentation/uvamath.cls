@@ -42,7 +42,7 @@
 Master Software Engineering\\\smallskip
 Faculteit der Natuurwetenschappen, Wiskunde en Informatica\\\smallskip
 Universiteit van Amsterdam\\\bigskip
-\includegraphics[width=0.070\hsize]{Images/uvalogo}
+\includegraphics[width=0.070\hsize]{../uvalogo}
 }
 \instituteaddress{Korteweg-de Vries Instituut voor Wiskunde\\
 Universiteit van Amsterdam\\
