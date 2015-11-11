@@ -39,6 +39,52 @@ Assessing the action of first performing the individual reading assignments yiel
 
 A similar approach was then used for the other assignments.
 
+\clearpage
+\section*{3.3}
+\subsection*{Example}
+The following reads as a graph definition:
+
+\begin{itemize}
+	\item[\textbf{Key}] Maintain [GoalIdentifier]:
+	\emph{Goal/requirement definition.}
+	
+	\begin{itemize}
+		\item Maintain [SubGoalIdentifier]:		
+		\emph{Goal/requirement definition.}
+		
+		\item[\textbf{Key}] Maintain [SubGoalIdentifier]:	
+		\emph{Goal/requirement definition.}
+		
+		\begin{itemize}
+			\item Maintain [SubSubGoalIdentifier]:		
+			\emph{Goal/requirement definition.}
+			
+			\item Maintain [SubSubGoalIdentifier]:	
+			\emph{Goal/requirement definition.}
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+The \emph{key} defines the type of connector (\emph{and/or}) and the indented sub-goals contribute to their main goal. In the example above the goal with identifier \emph{GoalIdentifier} has two goals contributing to its success (both with identifier \emph{SubGoalIdentifier}, with the latter also having two sub-goals), if its key was an \emph{and} connector both of these sub-goals would have to be satisfied.\\\\ 
+
+
+\subsection*{BlackBoard goals}
+
+\begin{itemize}
+	\item[\textbf{And}] Maintain [DigitalInformationPortal]:
+	\emph{\textbf{If} a teacher or student wants to exchange information \textbf{then always} the system provides a means to do so.}
+	
+	\begin{itemize}
+		\item Maintain [MakeInformationAvailable]:		
+		\emph{\textbf{Always} a teacher can make information available for its students.}
+		
+		\item Maintain [GetAvailableInformation]:
+		\emph{\textbf{Always} a student can get available information.}
+		
+		\item Avoid [UnauthorizedAccess]:
+		\emph{\textbf{Always not} studends can get information not (yet) meant for them.}
+	\end{itemize}
+\end{itemize}
 
 
 \chapter{References}
