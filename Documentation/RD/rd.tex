@@ -102,62 +102,72 @@ In the first week we focused on getting a better understanding of the domain in 
 \section{Glossary of terms}
 \todo{List all relevant terms in the problem world}
 \begin{itemize}
-	\item[student] A person who studies at an university (in our case the University of Amsterdam).
-	\item[teacher] A person who teachers courses at an university (in our case the University of Amsterdam).
-	\item[UvA] University of Amsterdam. 
-	\item[Blackboard] Name of currently licensed ELE by the UvA. 
-	\item[ELE] Electronic Learning Environment. ICT solution where part of a course teaching and organization is moved to an (online) software platform. An example of an ELE is Blackboard.
+	\item[\textbf{student}] A person who studies at an university (in our case the University of Amsterdam).
+	\item[\textbf{teacher}] A person who teachers courses at an university (in our case the University of Amsterdam).
+	\item[\textbf{UvA}] University of Amsterdam. 
+	\item[\textbf{Blackboard}] Name of currently licensed ELE by the UvA. 
+	\item[\textbf{ELE}] Electronic Learning Environment. ICT solution where part of a course teaching and organization is moved to an (online) software platform. An example of an ELE is Blackboard.
+	\item[\textbf{ICT}] Information and Communication Technology. Mainly a Dutch term for \textbf{IT}, which stands for Information Technology.
+	
 	
 \end{itemize}
 
 \section{Organization}
-The organization in which Blackboard is used is the University of Amsterdam (UvA). 
+The organization in which Blackboard is used is the University of Amsterdam (UvA). The UvA employs many different IT systems, some of them communicating with Blackboard. The mission and (business) goals of the UvA can be found in Section \ref{uva_goals}. The ICT-department within the UvA has as responsibility to keep all the IT solutions up and running. Teachers using Blackboard have to request new functionality (in practice a request for a new module for Blackboard) at the ICT-department. 
 
-The organization within which the system-as-is takes place: its structure, strategic objectives,
-business policies, roles played by organizational units and actors, and dependencies
-among them.
 
 \section{Goal}
 The goal of a requirement engineering project in a perfect world would be strife to find all of most important quality requirements for all relevant stakeholders. As stated in Contextual Design \cite{contextual_design} a design process could always be further elaborated, so finding all and every requirements for all stakeholders is an illusion.
 
-Because of this and the time constraints of this project, the goal will be limited to the following: \emph{find a couple of the major requirements for the main stakeholder(s)}. We believe this is measurable enough for the assignment given the time frame but still enough of an abstraction given that we do not yet have a clear enough understanding of the domain at this time to make it more concrete without taking away from the achieveability.
+Because of this and the time constraints of this project, the goal will be limited to the following: \emph{find a couple of the major requirements for the main stakeholder(s) by asking the right questions}. We believe this is measurable enough for the assignment given the time frame but still enough of an abstraction given that we do not yet have a clear enough understanding of the domain at this time to make it more concrete without taking away from the achieveability.
 
 \section{Scope}
-The scope of the system-as-is: its underlying objectives, the components forming it, the
-concepts on which it relies, the tasks involved in it, the information flowing through it,
-and the constraints and regulations to which the system is subject.
+We looked at the functionality of Blackboard. Different IT systems within the UvA that have some connection with Blackboard are not the focus of this study. Aggregated functionality of Blackboard includes:
+\begin{enumerate}
+	\item Form groups, assign to groups.
+	\item Announcements
+	\item Share course related files (lectures, papers, assignments, etc).
+	\item Grades
+	\item Formative tests
+	\item Online cooperation
+	\item (A)synchronous meetings
+	\item Guided self-study
+\end{enumerate}
+
 
 \section{Stakeholders}
 \begin{itemize}
 	\item Users: Both students and teachers
-	\item Management:
-	\item Blackboard (company):
+	\item Management UvA
+	\item Blackboard (company)
+	\item ICT-department
 \end{itemize}
-
-The set of stakeholders to be involved in the RE process.
 
 \section{Strengths and Weaknesses}
-Students:
+Students: (Based on 3 weeks of interviewing)
 \begin{itemize}
 	\item[+] Easy way to access course specific information.
-	\item[+] Latest schedule of course.
+	\item[+] Central point of information access.
+	\item[+] Latest schedule of a course.
 	\item[-] Hard to use in the beginning.
 	\item[-] Only marginal functionality used, e.g. "We \textit{have} to use it."
+	\item[-] Ugly.
 \end{itemize}
 
-The strengths and weaknesses of the system-as-is, as perceived by the identified stakeholders.
+We gathered no, or not enough, information about the other stakeholders to draw reliable conclusions about their perceived strengths and weaknesses of the system-as-is.
 
 \section{Domain facts}
 The following facts are from a study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
 \begin{itemize}
-	\item Formative feedback can help students improve their work. \textit{Blackboard does not offer formative feedback, this is merely a responsibility of the teacher.}
-	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. 
-	\item Important how ICT is used that determines its effectiveness. \textit{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective.}
-	\item Teachers use ICT based on their own skills. This might undermine its effectiveness.
-	\item ICT changes rapidly. Partly, but in an increasingly lesser manner, by Moore's Law. In week 3 we will investigate this fact more in the literature.
+
+	\item Formative feedback can help students improve their work. \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
+	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule.}
+	\item Important how ICT is used that determines its effectiveness. \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question.}
+	\item Teachers use ICT based on their own skills. This might undermine its effectiveness. \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
+	\item ICT changes rapidly. (Moore's Law)
 	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes.
-	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms.
-	\item Media reports faster on trends then research can validate or discredit using that technology. Example: Interactive Whiteboards. 
+	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms. \todo{Take away barrier by stripping non-essential functionality??}
+	\item Media reports faster on trends then research can validate or discredit using that technology. Example: \todo{Interactive Whiteboards}. 
 	\item ICT does not help increase pupils attainment.
 \end{itemize}
 
@@ -167,6 +177,7 @@ The following facts are from a study in \cite{ict_study}. The implications for t
 During this phase we set out to gather the essential stakeholder goals. Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
 
 \section{UvA}
+\label{uva_goals}
 Taken from the core values of the UvA is the following: \\
 \textit{Engagement for the UvA and its staff implies the age-old obligation – based on a privileged academic position – to use acquired knowledge and insights to play an ongoing, prominent and visible role in the social debate. This value also reveals that the UvA is committed to the maximum development of the individual talents of its staff and students. Additionally, the choice of this core value suggests a strong mutual involvement between students, staff, employees, study programmes, institutes and the institution as a whole. And, lastly, there is an important link between academia and society. The UvA is located in historical and modern buildings throughout the city of Amsterdam, thus making it an integral part of the city.}
 
@@ -191,21 +202,19 @@ Taken from the UvA goal and by talking to teachers.
 \end{enumerate}
 
 \section{student}
-The student goals still need to be confirmed by finding a relevant paper. We believe these are the broad categories of students:
+The student goals still need to be confirmed by finding a relevant paper. As a result of our elicitations we believe these are the broad goals of students.
 \begin{enumerate}
 	\item Optimally develop one's personal and academic skills.	
 	\item Obtain diploma.
 \end{enumerate}
 
-
-
 \chapter{Domain understanding}
 \label{ch:understanding} 
 In order to find the essential features of an ELE we set out to find how an ELE can support the various stakeholders with achieving their goals. To this end we have some questions for which we want to find the answers. This we will do by conducting research and elicitations amongst the various stakeholders.
 
-Following is a list questions, loosely ordered on importance:
+Following is a list of questions, loosely ordered on importance:
 \begin{itemize}
-	\item What are the essential features of the Blackboard (or similar ELE) system for the UvA?
+	\item What are the essential features of the Blackboard (or similar ELE) system for the users?
 
 	\item To what extend does the current Blackboard system support the UvA goals?
 	\begin{itemize}
@@ -221,7 +230,7 @@ Following is a list questions, loosely ordered on importance:
 In this chapter we will answer these questions (though we may not be able to answer them all) and update the information once we get new data. We will also note how reliable the information is based on the source and/or frequency of the information.
 
 
-\section{What are the essential features of the Blackboard (or similar ELE) system for the UvA?}
+\section{What are the essential features of the Blackboard (or similar ELE) system for the users?}
 In order to find the essential features of the Blackboard system we have performed elicitations amongst both teachers and students. From these we have devised the following preliminary list of essential features:
 
 \begin{itemize}
@@ -263,6 +272,7 @@ By reasoning about how teachers develop their skills, from personal experience b
 \end{itemize}
 
 \subsection{To what extends does the system support the goals of the students?}
+
 By talking to teachers we have answered this question for students:
 \begin{itemize}
 	\item Students do not develop their skills through Blackboard because the system does not create \emph{good} teachers. Students develop their skills through individual discipline and programs set up by competent teachers, Blackboard is just one of the many tools used by the teachers. It still boils down to the teacher himself to channel his knowledge.
@@ -279,10 +289,19 @@ We might also get a more reliable (and possibly different) answer by substitutin
 
 
 \section{Which type of usability problems have no impact on education?}
-From our elicitations with and talking to students we learned:
+
+\subsection{What usability issues arise from using Blackboard?}
+From our elicitations with and talking to students we learned Blackboard has the following usability issues:
 \begin{itemize}
-	\item The usability problems that are usually connected to Blackboard have no impact on the	education. All who reported usability problems also stated that it was really annoying in the first couple of weeks, but after they got used to it the problem almost	entirely ceased to exist.
+	\item Many clicks to reach the target destination.
+	\item Convoluted User Interface.
+	\item No generic structure for storing documents. Every teacher uses his own file structure.
+	\item Tiny buttons.
+	\item Non-intuitive user interface. Blackboard was difficult to use in the early stages ($<$2 months).
+	\item Ugly, outdated design.
 \end{itemize}
+
+When asked how these usability issues affected the learning process of the students, every students said it didn't affect their learning process, but was merely an annoyance. For certain issues (No generic structure, tiny buttons, non-intuitive interface) they learned to adapt.
 
 \subsection{Reliability}
 The reliability of these statements is very doubtful. As we later learned from reading Thinking, Fast and Slow by Kahneman, people are not eager to open up and possibly embarrass themselves. So they might not let us know that they find Blackboard hard to use, as it might show that they personally do not have the skills to use the tool, which they can experience as embarrassing.
