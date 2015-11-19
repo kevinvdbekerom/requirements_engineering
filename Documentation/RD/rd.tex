@@ -64,8 +64,11 @@
 
 %\chapter{Introduction}
 %Blabla.
+\chapter{Introduction}
+This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \todo{website adres}.
 
 \chapter{Project Plan}
+\label{pp}
 The project plan for the first four weeks is explained in this chapter. The goal is to discover some of the essential features that should be provided by the successor of Blackboard. We base our project plan on the requirements engineering process, see Figure \ref{fig:spiral_model} \cite{RE_book} (chapter 1.1.6). This book identifies four phases of requirements engineering; 
 
 \begin{enumerate}
@@ -93,7 +96,6 @@ Note that we conduct one round of the spiral model, see Figure \ref{fig:spiral_m
 	\caption{Spiral Model of requirements engineering process}
 	\label{fig:spiral_model}
 \end{figure}
-
 
 
 \chapter{Domain Analysis}
@@ -171,7 +173,54 @@ The following facts are from a study in \cite{ict_study}. The implications for t
 	\item ICT does not help increase pupils attainment.
 \end{itemize}
 
+\chapter{Elicitation phase}
+\todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained during interviews, and Richard data}
+\begin{itemize}
+	\item The opportunities arising from the evolution of technologies and market conditions that
+	could address the weaknesses of the system-as-is while preserving its strengths. \textit{Did we find any alternative ELEs or new IT solutions that address non-usage of student interaction (message boards, wikis, forums)? }
+	\item The improvement objectives that the system-to-be should meet with respect to such
+	weaknesses and opportunities, together with alternative options for satisfying them. \textit{The system should focus more on doing the most common function extremely well.}
+	\item The organizational and technical constraints that this system should take into account. \textit{Many different departments, with different courses, having different learning systems (refer to paper about teaching methods (constructionist vs bla)). Also privacy! Integration with other IT systems within the UvA, i.e. information integrity.}
+	\item Alternative boundaries that we might consider between what will be automated by the
+	software-to-be and what will be left under the responsibility of the environment. \textit{??}
+	\item Typical scenarios illustrating desired interactions between the software-to-be and its
+	environment. \textit{??}
+	\item The domain properties and assumptions about the environment that are necessary for
+	the software-to-be to work properly. \textit{Students will roll with whatever system there is.}
+	\item The requirements that the software-to-be should meet in order to conform to all of the
+	above. \textit{Incorporate in other chapter?}
+\end{itemize}
 
+\chapter{Evaluation and Agreement}
+\todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained in Chapter 4.}
+\begin{itemize}
+	\item Conflicting concerns must be identified and resolved. These often arise from multiple
+	viewpoints and different expectations. For instance \textit{Usability vs Goal of students OR goals of UvA vs goals of students.}
+	\item There are risks associated with the system that is being shaped. They must be assessed
+	and resolved. {Privacy, accessibility of tools, and their reliability.}
+	\item \textbf{The alternative options} identified during elicitation must be compared with regard to
+	quality objectives and risks, and best options must be selected on that basis. \todo{Do we have alternative options?}
+	\item Requirements prioritization is often necessary for a number of reasons: \begin{itemize}
+		\item Favouring higher-priority requirements is a standard way of resolving conflicts.
+		\item Dropping lower-priority requirements provides a way of integrating multiple wishlists
+		that would together exceed budgets and deadlines.
+		\item Priorities make it easier to plan an incremental development process, and to replan
+		the project during development as new constraints arise such as unanticipated delays,
+		budget restrictions, deadline contractions etc.
+	\end{itemize}
+
+\end{itemize}
+
+\chapter{Specification and Documentation}
+The resulting product is the requirements document (RD). In this document, the objectives,
+concept definitions, relevant domain properties, responsibilities, system requirements, software
+requirements and environmental assumptions are specified precisely and organized into a
+coherent structure. These specifications form the core of the RD. Satisfaction arguments should
+appear there as well (see Section 1.1.4.). Other sections in the RD may include a description
+of likely variants and revisions, acceptance test data and cost figures. The RD may also be
+complemented by annexes such as the preliminary system proposal after domain understanding,
+elicitation and evaluation, to provide the context and rationale for decisions taken, as well as
+technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 4 and 5, according to above text.}
 
 \chapter{Essential stakeholder goals}\label{stakeholder_goals}
 During this phase we set out to gather the essential stakeholder goals. Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
@@ -337,6 +386,8 @@ Tailoring the requirements of the new system to fit this objective might be an e
 
 \subsection{Does the usage of Blackboard save the teachers time as compared to organizing the course themselves (file sharing, group building, assignment checking for plagiarism, etc)?}
 \label{ss_1}
+
+
 
 \subsection{Will teachers who spent (relatively) less time on bureaucracy improve student learning, i.e. perform activities in the \textit{education improvement factors} set?}
 \label{ss_2}
