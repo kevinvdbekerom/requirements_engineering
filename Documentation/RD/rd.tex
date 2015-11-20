@@ -65,11 +65,11 @@
 %\chapter{Introduction}
 %Blabla.
 \chapter{Introduction}
-This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \todo{website adres}.
+This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \url{www.tomvanduist.com/master_se/re/index.html}.
 
 \chapter{Project Plan}
 \label{pp}
-The project plan for the first four weeks is explained in this chapter. The goal is to discover some of the essential features that should be provided by the successor of Blackboard. We base our project plan on the requirements engineering process, see Figure \ref{fig:spiral_model} \cite{RE_book} (chapter 1.1.6). This book identifies four phases of requirements engineering; 
+The project plan for the first four weeks is explained in this chapter. The goal is to discover some of the essential features that should be provided by the successor of Blackboard. We base our project plan on the requirements engineering process, see Figure \ref{fig:spiral_model} from \cite{RE_book} (chapter 1.1.6). This book identifies four phases of requirements engineering; 
 
 \begin{enumerate}
 	\item Domain understanding and elicitation.
@@ -78,7 +78,7 @@ The project plan for the first four weeks is explained in this chapter. The goal
 	\item Quality assurance.
 \end{enumerate}
 
-During the first week we will get familiar with the problem world, as described in the first phase \cite{RE_book}. We will investigate the system-as-is, ourselves, and ask users (students) about their experiences. We will work trough the questions listed in the relevant section in the book. We will also compose a list of stakeholders, which we interview in the coming weeks.
+During the first two weeks we will get familiar with the problem world, as described in the first phase \cite{RE_book}. We will investigate the system-as-is ourselves, and ask users (students) about their experiences. We will work trough the questions listed in the relevant section in the book. We will also compose a list of stakeholders, which we interview in the coming weeks.
 
 Week 2 will resolve around the second phase: evaluation and negotiation. The goal of this week is to find all critical (business) goals of the stakeholders of the system. Why is it replaced? What is the relation to the mission and vision of the UvA (if there is any)? Why did the UvA use an education management tool in the first place? What are the goals of the students in relation to the tool etc. During this week we will interview remaining stakeholders, to verify and add upon the information we gathered in the first week. We will also interview more students with prepared questions.
 
@@ -88,7 +88,7 @@ Week 2 will resolve around the second phase: evaluation and negotiation. The goa
 
 In week 3 and 4 we will try to answer the questions we deemed most interesting and essential to get a good successor of Blackboard. These can be found in Chapter \ref{ch:understanding}.
 
-Note that we conduct one round of the spiral model, see Figure \ref{fig:spiral_model}. There will be some backtracking to other phases (previous weeks), because some information becomes available after the relevant week/phase. 
+Note that we conduct one round of the spiral model minus the last phase due to time constraints. There will be some backtracking to other phases (previous weeks), because some information becomes available after the relevant week/phase. 
 
 \begin{figure}[h]
 	\centering
@@ -99,7 +99,7 @@ Note that we conduct one round of the spiral model, see Figure \ref{fig:spiral_m
 
 
 \chapter{Domain Analysis}
-In the first week we focused on getting a better understanding of the domain in order to form a better understanding of the problems in the domain with relation to the goals, which we will gather during the next phase.
+In the first two weeks we focused on getting a better understanding of the domain in order to form a better understanding of the problems in the domain with relation to the goals, which we will gather during the next phase.
 
 \section{Glossary of terms}
 \todo{List all relevant terms in the problem world}
@@ -107,7 +107,7 @@ In the first week we focused on getting a better understanding of the domain in 
 	\item[\textbf{student}] A person who studies at an university (in our case the University of Amsterdam).
 	\item[\textbf{teacher}] A person who teachers courses at an university (in our case the University of Amsterdam).
 	\item[\textbf{UvA}] University of Amsterdam. 
-	\item[\textbf{Blackboard}] Name of currently licensed ELE by the UvA. 
+	\item[\textbf{Blackboard}] Name of currently licensed ELE used by the UvA. 
 	\item[\textbf{ELE}] Electronic Learning Environment. ICT solution where part of a course teaching and organization is moved to an (online) software platform. An example of an ELE is Blackboard.
 	\item[\textbf{ICT}] Information and Communication Technology. Mainly a Dutch term for \textbf{IT}, which stands for Information Technology.
 	
@@ -119,7 +119,7 @@ The organization in which Blackboard is used is the University of Amsterdam (UvA
 
 
 \section{Goal}
-The goal of a requirement engineering project in a perfect world would be strife to find all of most important quality requirements for all relevant stakeholders. As stated in Contextual Design \cite{contextual_design} a design process could always be further elaborated, so finding all and every requirements for all stakeholders is an illusion.
+The goal of a requirement engineering project in a perfect world would be strife to find all of most important quality requirements for all relevant stakeholders. As stated in Contextual Design \cite{contextual_design}, a design process could always be further elaborated, so finding all and every requirements for all stakeholders is an illusion.
 
 Because of this and the time constraints of this project, the goal will be limited to the following: \emph{find a couple of the major requirements for the main stakeholder(s) by asking the right questions}. We believe this is measurable enough for the assignment given the time frame but still enough of an abstraction given that we do not yet have a clear enough understanding of the domain at this time to make it more concrete without taking away from the achieveability.
 
@@ -148,23 +148,25 @@ We looked at the functionality of Blackboard. Different IT systems within the Uv
 \section{Strengths and Weaknesses}
 Students: (Based on 3 weeks of interviewing)
 \begin{itemize}
+	\item[+] Possible to get mobile notifications through the app.
 	\item[+] Easy way to access course specific information.
 	\item[+] Central point of information access.
 	\item[+] Latest schedule of a course.
 	\item[-] Hard to use in the beginning.
 	\item[-] Only marginal functionality used, e.g. "We \textit{have} to use it."
+	\item[-] Different structure per course.
 	\item[-] Ugly.
 \end{itemize}
 
 We gathered no, or not enough, information about the other stakeholders to draw reliable conclusions about their perceived strengths and weaknesses of the system-as-is.
 
 \section{Domain facts}
-The following facts are from a study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
+The following facts are from a meta-study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
 \begin{itemize}
 
-	\item Formative feedback can help students improve their work. \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
-	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule.}
-	\item Important how ICT is used that determines its effectiveness. \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question.}
+	\item Formative feedback can help students improve their work. \textit{Blackboard does not offer formative feedback, this is merely a responsibility of the teacher.}
+	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on Blackboard. Need to hand in assignments. Sometimes only on Blackboard.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule.}
+	\item The way in which ICT is used determines its effectiveness. \todo{If a domain fact is that students use Blackboard because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question.}
 	\item Teachers use ICT based on their own skills. This might undermine its effectiveness. \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
 	\item ICT changes rapidly. (Moore's Law)
 	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes.
@@ -191,7 +193,7 @@ The following facts are from a study in \cite{ict_study}. The implications for t
 	above. \textit{Incorporate in other chapter?}
 \end{itemize}
 
-\chapter{Evaluation and Agreement}
+\chapter{Evaluation and Negotiation}
 \todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained in Chapter 4.}
 \begin{itemize}
 	\item Conflicting concerns must be identified and resolved. These often arise from multiple
