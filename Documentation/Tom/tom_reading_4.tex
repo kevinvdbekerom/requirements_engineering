@@ -1,6 +1,6 @@
 \input{../style.tex}
 
-\title{Reading assignment week 3}
+\title{Reading assignment week 4}
 %Variables
 \newcommand{\TitelAbbr}{}
 \newcommand{\Version}{0.1}
@@ -18,35 +18,64 @@
 \clearpage
 
 
-\chapter*{Reading assignment week 3}
+\chapter*{Reading assignment week 4}
 
 \section*{4.1}
+I was already familiar with all the models presented in Chapter 8 of \emph{Requirements	in Engineering Projects}\cite{req_en_book} so I found some different models. Some more suitable for the Blackboard project than others.
 
-\subsection*{ \cite{req_en_book}}
-Based on 
+\subsection*{SysML requirements diagram \cite{sysml}}
+Provides a way to visually manage and represent system requirements. A requirements is shown as a block, connections are used to show groupings and dependencies of requirements.
 \begin{itemize}
-	\item[\textbf{+}] 
-	\item[\textbf{-}] 
+	\item[\textbf{+}] Model dependencies between requirements.
+	\item[\textbf{+}] Create groupings to manage dependencies between multiple requirements.
+	\item[\textbf{-}] If many requirements are represented in a single model it might get too complex for stakeholders to understand.
 \end{itemize}
+
+Example: \\
+See Figure \ref{fig:sysml_req_diagram}, the requirement of distilled water shall be met by boiling water, which has dependencies on different subsystems.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\linewidth]{Resources/4_transformational.png}
-	\caption{The transformational process model.}
-	\label{fig:transformational}
+	\includegraphics[width=0.65\linewidth]{Resources/4_sysml_req_diagram.png}
+	\caption{Example SysML Requirements Diagram.}
+	\label{fig:sysml_req_diagram}
 \end{figure} 
 
 \clearpage
-\subsection*{ \cite{req_en_book}}
-Based on
+\subsection*{Communication Diagram \cite{communication_diagram}}
+Models the communication between objects. Connections are used to represent the need for communication during execution between objects.
 \begin{itemize}
-	\item[\textbf{+}] 
-	\item[\textbf{-}] 
+	\item[\textbf{+}] Messages are grouped for easy repositioning.
+	\item[\textbf{+}] Use swimlanes to represent layers of a system.
+	\item[\textbf{+}] See where trade-offs need to be made.
+	\item[\textbf{-}] Low level.
 \end{itemize}
+
+Example:\\
+Can be used for modelling the interaction of the user with the UI and the system (Figure \ref{fig:communication_diagram}). Or for modelling the inter system communications. This could be used to test the requirements.
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\linewidth]{Resources/4_spiral.png}
-	\caption{The spirals model.}
-	\label{fig:transformational}
+	\includegraphics[width=1\linewidth]{Resources/4_communication_diagram.png}
+	\caption{Example communication diagram.}
+	\label{fig:communication_diagram}
+\end{figure} 
+
+\clearpage
+\subsection*{Process life-cycle diagram \cite{sysml}}
+Used to model the life-cycle of sub-processes to parent processes.
+\begin{itemize}
+	\item[\textbf{+}] Communicate the life-cycle of processes within the business and possibly with stakeholders.
+	\item[\textbf{+}] Could also be used to model the life-cycle of system processes.
+	\item[\textbf{-}] Seems more appropriate to model business process than requirements/system processes.
+	\item[\textbf{-}] Does not model any data.
+\end{itemize}
+
+Example:\\
+See Figure \ref{fig:lifecycle_diagram}, sub-processes are grouped within the life-cycle of parent-processes.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\linewidth]{Resources/4_lifecycle_diagram.png}
+	\caption{Example process life-cycle diagram.}
+	\label{fig:lifecycle_diagram}
 \end{figure} 
 
 
@@ -57,6 +86,13 @@ Based on
 	\bibitem{req_en_book}
 	Joao M. Fernandes, Ricardo J. Machado, \\
 	\emph{Requirements in Engineering Projects}
+	
+	\bibitem{sysml}
+	OMG Systems Modeling Language (OMG SysML) \\
+	\url{http://www.omgsysml.org/INCOSE-OMGSysML-Tutorial-Final-090901.pdf}
+	
+	\bibitem{communication_diagram}
+	\url{http://www.visual-paradigm.com/features/uml-and-sysml-modeling/}
 	
 \end{thebibliography}
 
