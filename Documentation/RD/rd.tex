@@ -21,26 +21,8 @@
 
 \tableofcontents
 
-\chapter*{Document Status Sheet}
-\section*{Document status overview}
-\subsection*{General}
-\begin{tabular}[!]{ll}
-    Document title:     & Architectural Design Document\\
-    Authors:           	& Kevin van den Bekerom \\ 
-						& Tom van Duist \\
-    Document status:    & Draft release\\
-\end{tabular}
 
-\subsection*{Document history}
-\begin{tabular}[!]{|l|l|l|l|}
-    \hline
-    \emph{Version}    &   \emph{Date} &  \emph{Reason of change}\\
-    \hline
-    0.0 & 02-09-2015 &  Setup of the document layout\\    
-    \hline
-    0.1 & 29-10-2015 & Release version week 1 \\
-    \hline
-\end{tabular}
+
 
 \clearpage
 
@@ -280,7 +262,6 @@ During the interviews we found out that students use communication channels not 
 
 The \rreport showed that teachers only use the basic functionality of Blackboard. We identified what basic functionality entails, which can be read in Section \ref{sec:essential_features}. The interviews showed that all students knew about, and used the essential functionalities. As already noted, students only use Blackboard, when their teacher uses Blackboard. We can hypothesize that if a teacher does not use the more advanced functionality (i.e. message boards), student wont either. Our interview data is not extensive enough to confirm or disprove this hypothesis. We also did not ask the right questions. 
 
-   \todo{Also privacy! Integration with other IT systems within the UvA, i.e. information integrity. (Organiztional and techical constraints)}
 \section{Organizational and technical constraints}
 The UvA consists of many different departments (Amsterdam University College, Department of Medicine, Department of Law, Department of Sciences among others). In the \rreport it is stated that there are significant differences in the usage of Blackboard among different departments. The diversity of education is one thing to take into account. Raquel Benbunan-Fich \cite{improveEducationWithIt} identified two models of content transmission: the objectivist and constructivism model. The first is classified by the typical classroom example, where a teacher conveys knowledge to students as a one-way stream of information. For the latter, knowledge emerges through peer interaction, evaluation and cooperation. For each model there are different IT solutions. The first model relies more on sharing content, the second on communication channels (such as Slack). As mentioned before, students already make extensive use of communication channels without Blackboard. \\
 \todo{The domain properties that are necessary for
@@ -304,35 +285,21 @@ For the new ELE we will assume that students who have to use the system to pass 
 
 \chapter{Evaluation and Agreement}
 In this chapter we will evaluate and negotiate our findings. On conflicting concerns an agreement must be met which will be grounded in data gathered in the previous phases.
-\todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained in Chapter 4.}
+
 \section{Does the new Blackboard have to contribute to the goals of the UvA?}
 As we found out when answering "\emph{\ref{uva_goal_question}: \nameref{uva_goal_question}}", we doubt if the current system has a notable contribution towards the main goal of the UvA and are not sure if such a system ever will, although this is hard to answer.
 
 A different UvA objective states: \emph{Evidenced-based ICT innovations are	incorporated into the UvA’s education policy} \cite{uva_strategic_plan}.
 
-Tailoring the requirements of the new system to fit this objective might be an easier task to accomplish. Is this a good goal however? We think it isn't. It cannot be refuted - Evidenced-based ICT innovation showing what? - , therefore the goal is ambiguous. Our solution, whatever form it might take, can be easily transformed to satisfy an ambiguous goal by the nature of ambiguously. We can just interpret the goal in favour of our solution. 
+Tailoring the requirements of the new system to fit this objective might be an easier task to accomplish. Is this a good goal however? We think it isn't. It cannot be refuted - Evidenced-based ICT innovation showing what? - , therefore the goal is ambiguous. Our solution, whatever form it might take, can be easily transformed to satisfy an ambiguous goal by the nature of ambiguously. We can just interpret the goal in favour of our solution.
 
 \section{Necessary features}
 As we saw in \emph{\ref{ch:elicitation}: \nameref{ch:elicitation}} the necessary features according to almost all of the users are \emph{sharing documents}, \emph{Hand in assignments} and \emph{Publish announcements}. According to Richard van der Wurff's research only a small subset of teachers use the other functionalities of Blackboard. Also these teachers are the innovative users that use different tools next to Blackboard \cite{richard_report}. 
 
 According to these findings we believe that a system where the core functionalities that all users use is supported, and all other tool use falls outside of this system would suffice for the stakeholder needs that we identified. Thus a system that supports the bare minimum of features would suffice.
 
-\begin{itemize}
-	\item Conflicting concerns must be identified and resolved. These often arise from multiple
-	viewpoints and different expectations. For instance \textit{Usability vs Goal of students OR goals of UvA vs goals of students.}
-	\item There are risks associated with the system that is being shaped. They must be assessed
-	and resolved. {Privacy, accessibility of tools, and their reliability.}
-	\item \textbf{The alternative options} identified during elicitation must be selected on that basis. \todo{Do we have alternative options?}
-	\item Requirements prioritization is often necessary for a number of reasons: 
-	\begin{itemize}
-		\item Favouring higher-priority requirements is a standard way of resolving conflicts.
-		\item Dropping lower-priority requirements provides a way of integrating multiple wishlists
-		that would together exceed budgets and deadlines.
-		\item Priorities make it easier to plan an incremental development process, and to replan
-		the project during development as new constraints arise such as unanticipated delays,
-		budget restrictions, deadline contractions etc.
-	\end{itemize}
-\end{itemize}
+\section{Privacy}
+When choosing a tool that handles important data, such as student assignments or confidential communication between the student and the teacher, privacy comes to mind. What level of privacy the new ELE should offer is not something that we researched properly. But if teachers are allowed to use their own tools, next to the standard ELE, and this is encouraged by the UvA when choosing a simple ELE. Then this open policy could potentially conflict with the privacy standards, this could be solved through the governance structure. Only certain applications are allowed, or students must be given the choice not to use the tool.
 
 \chapter{Specification and Documentation}
 This section concludes our Requirements Document by listing the requirements that we found, next we state our vision for the successor of Blackboard according to these requirements and finally we argue why our findings are reliable or not reliable.
