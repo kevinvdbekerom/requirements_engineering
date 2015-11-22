@@ -66,7 +66,7 @@
 %\chapter{Introduction}
 %Blabla.
 \chapter{Introduction}
-This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \todo{website adres}.
+This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \url{www.tomvanduist.com/master_se/re}.
 
 \chapter{Project Plan}
 \label{pp}
@@ -195,14 +195,13 @@ We gathered no, or not enough, information about the other stakeholders to draw 
 \section{Domain facts}
 \label{domain_facts}
 \begin{enumerate}                                                           
-	\item Formative feedback can help students improve their work.\cite{ict_study} \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
-	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \cite{ict_study}\todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule. Students gebruiken BB alleen als teacher dit ook gebruikt.}
-	\item Important how ICT is used that determines its effectiveness.\cite{ict_study} \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question. Richard zijn doc zegt dit eigenlijk ook. STudents gebruiken omdat teachers verplicht stellen.}
-	\item Teachers use ICT based on their own skills. This might undermine its effectiveness.\cite{ict_study} \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
+	\item \label{df:formative_feedback}Formative feedback can help students improve their work.\cite{ict_study} \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.} \ref{test}.
+	\item \label{df:link} Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \cite{ict_study}
+	\item \label{df:teacher_skills} Teachers use ICT based on their own skills. This might undermine its effectiveness.\cite{ict_study} 
 	\item ICT changes rapidly. (Moore's Law)
 	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes. \cite{ict_study}
-	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms.\cite{ict_study} \todo{Take away barrier by stripping non-essential functionality??}
-	\item Media reports faster on trends then research can validate or discredit using that technology.\cite{ict_study} Example: \todo{Interactive Whiteboards}. 
+	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms.\cite{ict_study} 
+	\item Media reports faster on trends then research can validate or discredit using that technology.\cite{ict_study} 
 	\item ICT does not help increase pupils attainment.\cite{ict_study}
 	\item (Digital) instant feedback significantly improves student learning \cite{clicker}
 	\item Advanced Blackboard functionality is almost never used. Adaptive rules 5.9$\%$ in 2014/2015. Progress warnings $< 1 \%$. \cite{richard_report}
@@ -213,6 +212,7 @@ We gathered no, or not enough, information about the other stakeholders to draw 
 During this phase we will try and answer some important domain questions (though we may not be able to answer them all) and update the information once we get new data.
 
 \section{What are the essential features of the Blackboard (or similar ELE) system for the users?}
+\label{sec:essential_features}
 In order to find the essential features of the Blackboard system we have performed elicitations amongst both teachers and students. From these we have devised the following preliminary list of essential features:
 
 \begin{itemize}
@@ -244,13 +244,14 @@ In order to answer this question we have divided it into two sub-questions. As t
 \subsection{To what extends does the system support the goals of the teachers?}
 By reasoning about how teachers develop their skills, from personal experience by looking around in the UvA and talking to teachers we can answer this question for the staff:
 \begin{itemize}
-	\item Teachers do not develop their skills through Blackboard, they develoop their skills by performing activities related to their field. For example by developing assignments for students. Or by doing personal research, read papers, go to conferences etc.
+	\item Teachers do not develop their skills through Blackboard, they develop their skills by performing activities related to their field. For example by developing assignments for students. Or by doing personal research, read papers, go to conferences etc.
+	\item Only small portion (around 20 $\%$) of intrinsically motivated teachers that use different, advanced tools, see \cite{richard_report}. Since the skills of a teacher determine the effectivess of an ICT tool \nameref{df:teacher_skills}, we can conclude that Blackboard does not improve the goal of the teachers and students. It can only help as much as teachers have the skills to use it. Therefore an ELE with advanced functionality does not improve the skills of teachers, but the other way around. The skills of teachers determines the functionality of the ELE for which it is still effective. 
 \end{itemize}
 
 \subsection{To what extends does the system support the goals of the students?}
 By talking to teachers we have answered this question for students:
 \begin{itemize}
-	\item Students do not develop their skills through Blackboard because the system does not create \emph{good} teachers. Students develop their skills through individual discipline and programs set up by competent teachers, Blackboard is just one of the many tools used by the teachers. It still boils down to the teacher himself to channel his knowledge.
+	\item Students do not develop their skills through Blackboard because the system does not create \emph{good} teachers. Students develop their skills through individual discipline and programs set up by competent teachers, Blackboard is just one of the many tools used by the teachers. It still boils down to the teacher himself to channel his knowledge. As we found out during the domain analysis if students use Blackboard because they have to (pass the course) it does not improve learning, See \nameref{df:link}.
 \end{itemize}
 
 \section{Which type of usability problems have no impact on education?}\label{s_1}
@@ -276,7 +277,7 @@ So we found that irrespective of the characteristics regarding study goals of th
 \section{opportunities arising from technology}
 During the interviews we found out that students use communication channels not integrated into Blackboard. Named examples are Facebook, Slack and Whatsapp. These IT solutions were used to discuss answers to assignments, among others. If we were to implement these into the new ELE, we have to investigate their concrete effect on student goals, as stated in \ref{ch:stakeholder_goals}: \nameref{ch:stakeholder_goals}.
 
-The \rreport showed that teachers only use the basic functionality of Blackboard. We identified what basic functionality entails, which can be read in \todo{Reference to essential functionality section}. The interviews showed that all students knew about, and used the essential functionalities. As already noted, students only use Blackboard, when their teacher uses Blackboard. We can hypothesize that if a teacher does not use the more advanced functionality (i.e. message boards), student wont either. Our interview data is not extensive enough to confirm or disprove this hypothesis. We also did not ask the right questions. 
+The \rreport showed that teachers only use the basic functionality of Blackboard. We identified what basic functionality entails, which can be read in Section \ref{sec:essential_features}. The interviews showed that all students knew about, and used the essential functionalities. As already noted, students only use Blackboard, when their teacher uses Blackboard. We can hypothesize that if a teacher does not use the more advanced functionality (i.e. message boards), student wont either. Our interview data is not extensive enough to confirm or disprove this hypothesis. We also did not ask the right questions. 
 
    \todo{Also privacy! Integration with other IT systems within the UvA, i.e. information integrity. (Organiztional and techical constraints)}
 \section{Organizational and technical constraints}
