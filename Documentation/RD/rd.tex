@@ -99,7 +99,7 @@ Note that we conduct one round of the spiral model, see Figure \ref{fig:spiral_m
 \end{figure}
 
 
-\chapter{Domain Analysis}
+\chapter{Domain Understanding}
 In the first week we focused on getting a better understanding of the domain in order to form a better understanding of the problems in the domain with relation to the goals, which we will gather during the next phase.
 
 \section{Glossary of terms}
@@ -145,6 +145,39 @@ We looked at the functionality of Blackboard. Different IT systems within the Uv
 	\item ICT-department
 \end{itemize}
 
+\section{Stakeholder goals}
+\subsection{UvA}
+\label{uva_goals}
+Taken from the core values of the UvA is the following: \\
+\textit{Engagement for the UvA and its staff implies the age-old obligation – based on a privileged academic position – to use acquired knowledge and insights to play an ongoing, prominent and visible role in the social debate. This value also reveals that the UvA is committed to the maximum development of the individual talents of its staff and students. Additionally, the choice of this core value suggests a strong mutual involvement between students, staff, employees, study programmes, institutes and the institution as a whole. And, lastly, there is an important link between academia and society. The UvA is located in historical and modern buildings throughout the city of Amsterdam, thus making it an integral part of the city.}
+
+Important goals are:
+\begin{enumerate}
+	\item The UvA is committed to the maximum development of the individual talents of its staff and students.\cite{uva_mission}
+	\item The UvA strives for a strong mutual involvement between students, staff, employees, study programs, institutes and the institution as a whole.\cite{uva_mission}
+	\item Evidenced-based ICT innovations are incorporated into the UvA’s education policy.\cite{uva_strategic_plan} \begin{enumerate}
+		\item (Strategy): The use of Open Educational Resources – as part of blended curricula – will be one of the educational innovations implemented. ICT policy will be tailored in part to support the education process. 
+	\end{enumerate}
+	\item A modular Lifelong Learning programme is developed.\cite{uva_strategic_plan} \begin{enumerate}
+		\item (Strategy): This programme will draw on the online
+		courses in our blended curricula. 
+	\end{enumerate}
+\end{enumerate}
+
+\subsection{Teacher}
+Taken from the UvA goal and by talking to teachers.
+\begin{enumerate}
+	\item Develop individual skills.
+	\item Convey knowledge to students.
+\end{enumerate}
+
+\subsection{student}
+The student goals still need to be confirmed by finding a relevant paper. As a result of our elicitations we believe these are the broad goals of students.
+\begin{enumerate}
+	\item Optimally develop one's personal and academic skills.	
+	\item Obtain diploma.
+\end{enumerate}
+
 \section{Strengths and Weaknesses}
 Students: (Based on 3 weeks of interviewing)
 \begin{itemize}
@@ -160,37 +193,44 @@ Students: (Based on 3 weeks of interviewing)
 We gathered no, or not enough, information about the other stakeholders to draw reliable conclusions about their perceived strengths and weaknesses of the system-as-is.
                                
 \section{Domain facts}
-The following facts are from a study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
-\begin{itemize}                                                           
-	\item Formative feedback can help students improve their work. \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
-	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule. Students gebruiken BB alleen als teacher dit ook gebruikt.}
-	\item Important how ICT is used that determines its effectiveness. \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question. Richard zijn doc zegt dit eigenlijk ook. STudents gebruiken omdat teachers verplicht stellen.}
-	\item Teachers use ICT based on their own skills. This might undermine its effectiveness. \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
+
+
+\begin{enumerate}                                                           
+	\item Formative feedback can help students improve their work.\cite{ict_study} \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
+	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \cite{ict_study}\todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule. Students gebruiken BB alleen als teacher dit ook gebruikt.}
+	\item Important how ICT is used that determines its effectiveness.\cite{ict_study} \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question. Richard zijn doc zegt dit eigenlijk ook. STudents gebruiken omdat teachers verplicht stellen.}
+	\item Teachers use ICT based on their own skills. This might undermine its effectiveness.\cite{ict_study} \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
 	\item ICT changes rapidly. (Moore's Law)
-	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes.
-	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms. \todo{Take away barrier by stripping non-essential functionality??}
-	\item Media reports faster on trends then research can validate or discredit using that technology. Example: \todo{Interactive Whiteboards}. 
-	\item ICT does not help increase pupils attainment.
-\end{itemize}
+	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes. \cite{ict_study}
+	\item Research also rarely reports on technical issues or problems with equipment, yet these are what teachers find act as barriers to increasing the use of technology in classrooms.\cite{ict_study} \todo{Take away barrier by stripping non-essential functionality??}
+	\item Media reports faster on trends then research can validate or discredit using that technology.\cite{ict_study} Example: \todo{Interactive Whiteboards}. 
+	\item ICT does not help increase pupils attainment.\cite{ict_study}
+	\item (Digital) instant feedback significantly improves student learning \cite{clicker}
+	\item Advanced Blackboard functionality is almost never used. Adaptive rules 5.9$\%$ in 2014/2015. Progress warnings $< 1 \%$. \cite{richard_report}
+\end{enumerate}
 
 \chapter{Elicitation phase}
 \todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained during interviews, and Richard data}
-\begin{itemize}
 
+\section{opportunities arising from technology}
 	During the interviews we found out that students use communication channels not integrated into Blackboard. Named examples are Facebook, Slack and Whatsapp. These IT solutions were used to discuss answers to assignments, among others. If we were to implement these into the new ELE, we have to investigate their concrete effect on student goals, as stated in \todo{reference to student goals!}
 
 	The \rreport showed that teachers only use the basic functionality of Blackboard. We identified what basic functionality entails, which can be read in \todo{Reference to essential functionality section}. The interviews showed that all students knew about, and used the essential functionalities. Some students also used the more advanced functionalities. As already noted, students only use Blackboard, when their teacher uses Blackboard. We can hypothesize that if a teacher does not use the more advanced functionality (i.e. message boards), student wont either. Our interview data is not extensive enough to confirm or disprove this hypothesis. We also did not ask the right questions. 
 	
        \todo{Also privacy! Integration with other IT systems within the UvA, i.e. information integrity. (Organiztional and techical constraints)}
-	
-	The UvA consists of many different departments (Amsterdam University College, Department of Medicine, Department of Law, Department of Sciences among others). In the \rreport it is stated that there are significant differences in the usage of Blackboard among different departments. The diversity of education is one thing to take into account. Raquel Benbunan-Fich \cite{improveEducationWithIt} identifies two models of content transmission: the objectivist and constructivism model. The first is classified by the typical classroom example, where a teacher conveys knowledge to students as a one-way stream of information. For the latter, knowledge emerges through peer interaction, evaluation and cooperation. For each model different model there are different IT solutions. The first model relies more on sharing content, the second on communication channels. As mentioned before, students already make extensive use of communication channels without Blackboard. \\
+	\section{Organizational and technical constraints}
+	The UvA consists of many different departments (Amsterdam University College, Department of Medicine, Department of Law, Department of Sciences among others). In the \rreport it is stated that there are significant differences in the usage of Blackboard among different departments. The diversity of education is one thing to take into account. Raquel Benbunan-Fich \cite{improveEducationWithIt} identified two models of content transmission: the objectivist and constructivism model. The first is classified by the typical classroom example, where a teacher conveys knowledge to students as a one-way stream of information. For the latter, knowledge emerges through peer interaction, evaluation and cooperation. For each model there are different IT solutions. The first model relies more on sharing content, the second on communication channels (such as Slack). As mentioned before, students already make extensive use of communication channels without Blackboard. \\
  \todo{The domain properties that are necessary for
 		the software-to-be to work properly.} 
 	
+	
 	For the new ELE we will assume that students who have to use the system to pass their courses, will use the system, even if the new ELE has usability issues. These usability issues can be of the same order of magnitude as the usability issues Blackboard has. See \todo{Ref to usability issues} for a list of issues we found. 
 	
+	\section{Summary of important findings}
+	\begin{itemize}
+		\item 
+	\end{itemize}
 
-\end{itemize}
 
 \chapter{Evaluation and Agreement}
 \todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained in Chapter 4.}
@@ -226,37 +266,7 @@ technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 
 \chapter{Essential stakeholder goals}\label{stakeholder_goals}
 During this phase we set out to gather the essential stakeholder goals. Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
 
-\section{UvA}
-\label{uva_goals}
-Taken from the core values of the UvA is the following: \\
-\textit{Engagement for the UvA and its staff implies the age-old obligation – based on a privileged academic position – to use acquired knowledge and insights to play an ongoing, prominent and visible role in the social debate. This value also reveals that the UvA is committed to the maximum development of the individual talents of its staff and students. Additionally, the choice of this core value suggests a strong mutual involvement between students, staff, employees, study programmes, institutes and the institution as a whole. And, lastly, there is an important link between academia and society. The UvA is located in historical and modern buildings throughout the city of Amsterdam, thus making it an integral part of the city.}
 
-Important goals are:
-\begin{enumerate}
-	\item The UvA is committed to the maximum development of the individual talents of its staff and students.\cite{uva_mission}
-	\item The UvA strives for a strong mutual involvement between students, staff, employees, study programs, institutes and the institution as a whole.\cite{uva_mission}
-	\item Evidenced-based ICT innovations are incorporated into the UvA’s education policy.\cite{uva_strategic_plan} \begin{enumerate}
-		\item (Strategy): The use of Open Educational Resources – as part of blended curricula – will be one of the educational innovations implemented. ICT policy will be tailored in part to support the education process. 
-	\end{enumerate}
-	\item A modular Lifelong Learning programme is developed.\cite{uva_strategic_plan} \begin{enumerate}
-		\item (Strategy): This programme will draw on the online
-		courses in our blended curricula. 
-	\end{enumerate}
-\end{enumerate}
-
-\section{Teacher}
-Taken from the UvA goal and by talking to teachers.
-\begin{enumerate}
-	\item Develop individual skills.
-	\item Convey knowledge to students.
-\end{enumerate}
-
-\section{student}
-The student goals still need to be confirmed by finding a relevant paper. As a result of our elicitations we believe these are the broad goals of students.
-\begin{enumerate}
-	\item Optimally develop one's personal and academic skills.	
-	\item Obtain diploma.
-\end{enumerate}
 
 \chapter{Domain understanding}
 \label{ch:understanding} 
@@ -432,6 +442,20 @@ In this chapter we will start by forming high level goals the new system has to 
 	Strategic Plan 2015-2020 - Boundless Curiosity \\
 	\url{https://www.uva.nl/binaries/content/assets/uva/en/about-the-uva/uva-profile/mission-and-identity/boundless-curiosity-2015-2020-nieuw-en.pdf?2870291918297}
 	
+	\bibitem{improveEducationWithIt}
+	Raquel Benbunan-Fich,
+	\emph{Improving Education and Training With IT},
+	COMMUNICATIONS OF THE ACM June 2002/Vol. 45, No. 6
+	
+	\bibitem{clicker}
+	Steven A. Yourstone,† Howard S. Kraye, and Gerald Albaum,
+	\emph{Classroom Questioning with Immediate Electronic Response: Do Clickers Improve Learning?},
+	Decision Sciences Journal of Innovative Education Volume 6 Number 1,
+	January 2008
+	
+	\bibitem{richard_report}
+	Werkgroep Toekomst Elektronische Leeromgeving,
+	\emph{Tussenrapport Versie 2.3 28 oktober 2015}
 	
 
 	
