@@ -4,6 +4,7 @@
 %Variables
 \newcommand{\TitelAbbr}{RD}
 \newcommand{\Version}{0.1}
+\newcommand{\rreport}{Intermediate Requirements Engineering report}
 
 
 
@@ -65,11 +66,11 @@
 %\chapter{Introduction}
 %Blabla.
 \chapter{Introduction}
-This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \url{www.tomvanduist.com/master_se/re/index.html}.
+This RD is comprised of knowledge gathered in 4 weeks of Requirements Engineering for the Requirements Engineering class as part of the master education Software Engineering. We have condensed the acquired knowledge of four weeks into one document following the structure of our project plan, see Chapter \ref{pp}. We revised this project plan based on feedback in the second week session with Hans. In the elicitation phase we conducted numerous interviews, which are accessible on our portfolio website, see \todo{website adres}.
 
 \chapter{Project Plan}
 \label{pp}
-The project plan for the first four weeks is explained in this chapter. The goal is to discover some of the essential features that should be provided by the successor of Blackboard. We base our project plan on the requirements engineering process, see Figure \ref{fig:spiral_model} from \cite{RE_book} (chapter 1.1.6). This book identifies four phases of requirements engineering; 
+The project plan for the first four weeks is explained in this chapter. The goal is to discover some of the essential features that should be provided by the successor of Blackboard. We base our project plan on the requirements engineering process, see Figure \ref{fig:spiral_model} \cite{RE_book} (chapter 1.1.6). This book identifies four phases of requirements engineering; 
 
 \begin{enumerate}
 	\item Domain understanding and elicitation.
@@ -78,7 +79,7 @@ The project plan for the first four weeks is explained in this chapter. The goal
 	\item Quality assurance.
 \end{enumerate}
 
-During the first two weeks we will get familiar with the problem world, as described in the first phase \cite{RE_book}. We will investigate the system-as-is ourselves, and ask users (students) about their experiences. We will work trough the questions listed in the relevant section in the book. We will also compose a list of stakeholders, which we interview in the coming weeks.
+During the first week we will get familiar with the problem world, as described in the first phase \cite{RE_book}. We will investigate the system-as-is, ourselves, and ask users (students) about their experiences. We will work trough the questions listed in the relevant section in the book. We will also compose a list of stakeholders, which we interview in the coming weeks.
 
 Week 2 will resolve around the second phase: evaluation and negotiation. The goal of this week is to find all critical (business) goals of the stakeholders of the system. Why is it replaced? What is the relation to the mission and vision of the UvA (if there is any)? Why did the UvA use an education management tool in the first place? What are the goals of the students in relation to the tool etc. During this week we will interview remaining stakeholders, to verify and add upon the information we gathered in the first week. We will also interview more students with prepared questions.
 
@@ -88,7 +89,7 @@ Week 2 will resolve around the second phase: evaluation and negotiation. The goa
 
 In week 3 and 4 we will try to answer the questions we deemed most interesting and essential to get a good successor of Blackboard. These can be found in Chapter \ref{ch:understanding}.
 
-Note that we conduct one round of the spiral model minus the last phase due to time constraints. There will be some backtracking to other phases (previous weeks), because some information becomes available after the relevant week/phase. 
+Note that we conduct one round of the spiral model, see Figure \ref{fig:spiral_model}. There will be some backtracking to other phases (previous weeks), because some information becomes available after the relevant week/phase. 
 
 \begin{figure}[h]
 	\centering
@@ -99,7 +100,7 @@ Note that we conduct one round of the spiral model minus the last phase due to t
 
 
 \chapter{Domain Analysis}
-In the first two weeks we focused on getting a better understanding of the domain in order to form a better understanding of the problems in the domain with relation to the goals, which we will gather during the next phase.
+In the first week we focused on getting a better understanding of the domain in order to form a better understanding of the problems in the domain with relation to the goals, which we will gather during the next phase.
 
 \section{Glossary of terms}
 \todo{List all relevant terms in the problem world}
@@ -107,10 +108,9 @@ In the first two weeks we focused on getting a better understanding of the domai
 	\item[\textbf{student}] A person who studies at an university (in our case the University of Amsterdam).
 	\item[\textbf{teacher}] A person who teachers courses at an university (in our case the University of Amsterdam).
 	\item[\textbf{UvA}] University of Amsterdam. 
-	\item[\textbf{Blackboard}] Name of currently licensed ELE used by the UvA. 
+	\item[\textbf{Blackboard}] Name of currently licensed ELE by the UvA. 
 	\item[\textbf{ELE}] Electronic Learning Environment. ICT solution where part of a course teaching and organization is moved to an (online) software platform. An example of an ELE is Blackboard.
 	\item[\textbf{ICT}] Information and Communication Technology. Mainly a Dutch term for \textbf{IT}, which stands for Information Technology.
-	
 	
 \end{itemize}
 
@@ -119,7 +119,7 @@ The organization in which Blackboard is used is the University of Amsterdam (UvA
 
 
 \section{Goal}
-The goal of a requirement engineering project in a perfect world would be strife to find all of most important quality requirements for all relevant stakeholders. As stated in Contextual Design \cite{contextual_design}, a design process could always be further elaborated, so finding all and every requirements for all stakeholders is an illusion.
+The goal of a requirement engineering project in a perfect world would be strife to find all of most important quality requirements for all relevant stakeholders. As stated in Contextual Design \cite{contextual_design} a design process could always be further elaborated, so finding all and every requirements for all stakeholders is an illusion.
 
 Because of this and the time constraints of this project, the goal will be limited to the following: \emph{find a couple of the major requirements for the main stakeholder(s) by asking the right questions}. We believe this is measurable enough for the assignment given the time frame but still enough of an abstraction given that we do not yet have a clear enough understanding of the domain at this time to make it more concrete without taking away from the achieveability.
 
@@ -137,71 +137,34 @@ We looked at the functionality of Blackboard. Different IT systems within the Uv
 \end{enumerate}
 
 
-\section{Stakeholders and their goals}\label{ch:stakeholder_goals}
-Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
-We have identified the following stakeholders:
+\section{Stakeholders}
 \begin{itemize}
 	\item Users: Both students and teachers
 	\item Management UvA
 	\item Blackboard (company)
 	\item ICT-department
 \end{itemize}
-We will only focus on the first two, direct users (students and teachers) and the UvA.
-
-\subsection{UvA}
-\label{uva_goals}
-Taken from the core values of the UvA is the following: \\
-\textit{Engagement for the UvA and its staff implies the age-old obligation – based on a privileged academic position – to use acquired knowledge and insights to play an ongoing, prominent and visible role in the social debate. This value also reveals that the UvA is committed to the maximum development of the individual talents of its staff and students. Additionally, the choice of this core value suggests a strong mutual involvement between students, staff, employees, study programmes, institutes and the institution as a whole. And, lastly, there is an important link between academia and society. The UvA is located in historical and modern buildings throughout the city of Amsterdam, thus making it an integral part of the city.}
-
-Important goals are:
-\begin{enumerate}
-	\item The UvA is committed to the maximum development of the individual talents of its staff and students.\cite{uva_mission}
-	\item The UvA strives for a strong mutual involvement between students, staff, employees, study programs, institutes and the institution as a whole.\cite{uva_mission}
-	\item Evidenced-based ICT innovations are incorporated into the UvA’s education policy.\cite{uva_strategic_plan} \begin{enumerate}
-		\item (Strategy): The use of Open Educational Resources – as part of blended curricula – will be one of the educational innovations implemented. ICT policy will be tailored in part to support the education process. 
-	\end{enumerate}
-	\item A modular Lifelong Learning programme is developed.\cite{uva_strategic_plan} \begin{enumerate}
-		\item (Strategy): This programme will draw on the online
-		courses in our blended curricula. 
-	\end{enumerate}
-\end{enumerate}
-
-\subsection{Teacher}
-Taken from the UvA goal and by talking to teachers.
-\begin{enumerate}
-	\item Develop individual skills.
-	\item Convey knowledge to students.
-\end{enumerate}
-
-\subsection{student}
-As a result of our elicitations we believe these are the broad goals of students.
-\begin{enumerate}
-	\item Optimally develop one's personal and academic skills.	
-	\item Obtain diploma.
-\end{enumerate}
 
 \section{Strengths and Weaknesses}
 Students: (Based on 3 weeks of interviewing)
 \begin{itemize}
 	\item[+] Possible to get mobile notifications through the app.
-	\item[+] Easy way to access course specific information.
-	\item[+] Central point of information access.
+    \item[+] Central point of information access.
 	\item[+] Latest schedule of a course.
 	\item[-] Hard to use in the beginning.
-	\item[-] Only marginal functionality used, e.g. "We \textit{have} to use it."
 	\item[-] Different structure per course.
+  i.e. "We \textit{have} to use it."
 	\item[-] Ugly.
 \end{itemize}
 
 We gathered no, or not enough, information about the other stakeholders to draw reliable conclusions about their perceived strengths and weaknesses of the system-as-is.
-
+                               
 \section{Domain facts}
-The following facts are from a meta-study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
-\begin{itemize}
-
-	\item Formative feedback can help students improve their work. \textit{Blackboard does not offer formative feedback, this is merely a responsibility of the teacher.}
-	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on Blackboard. Need to hand in assignments. Sometimes only on Blackboard.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule.}
-	\item The way in which ICT is used determines its effectiveness. \todo{If a domain fact is that students use Blackboard because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question.}
+The following facts are from a study in \cite{ict_study}. The implications for the requirements engineering process are in italic.
+\begin{itemize}                                                           
+	\item Formative feedback can help students improve their work. \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
+	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule. Students gebruiken BB alleen als teacher dit ook gebruikt.}
+	\item Important how ICT is used that determines its effectiveness. \todo{If a domain fact is that students use BB because they have to, then a BB-related solution might not be effective. Combine this domain fact with answer to the question. Richard zijn doc zegt dit eigenlijk ook. STudents gebruiken omdat teachers verplicht stellen.}
 	\item Teachers use ICT based on their own skills. This might undermine its effectiveness. \todo{Data van Richard gebruiken!! e.g. 20 procent intrinsically motivated teachers, 80 procent doet maar wat.}
 	\item ICT changes rapidly. (Moore's Law)
 	\item The availability of a tool does not determine its effectiveness. In its initial stages the focus is on how to use the tool, rather than using the tool for learning-promoting purposes.
@@ -213,19 +176,20 @@ The following facts are from a meta-study in \cite{ict_study}. The implications 
 \chapter{Elicitation phase}
 \todo{Italic text is a begin on how to answer these questions. Work out what is relevant using the information we obtained during interviews, and Richard data}
 \begin{itemize}
-	\item The opportunities arising from the evolution of technologies and market conditions that
-	could address the weaknesses of the system-as-is while preserving its strengths. \textit{Did we find any alternative ELEs or new IT solutions that address non-usage of student interaction (message boards, wikis, forums)? }
-	\item The improvement objectives that the system-to-be should meet with respect to such
-	weaknesses and opportunities, together with alternative options for satisfying them. \textit{The system should focus more on doing the most common function extremely well.}
-	\item The organizational and technical constraints that this system should take into account. \textit{Many different departments, with different courses, having different learning systems (refer to paper about teaching methods (constructionist vs bla)). Also privacy! Integration with other IT systems within the UvA, i.e. information integrity.}
-	\item Alternative boundaries that we might consider between what will be automated by the
-	software-to-be and what will be left under the responsibility of the environment. \textit{??}
-	\item Typical scenarios illustrating desired interactions between the software-to-be and its
-	environment. \textit{??}
-	\item The domain properties and assumptions about the environment that are necessary for
-	the software-to-be to work properly. \textit{Students will roll with whatever system there is.}
-	\item The requirements that the software-to-be should meet in order to conform to all of the
-	above. \textit{Incorporate in other chapter?}
+
+	During the interviews we found out that students use communication channels not integrated into Blackboard. Named examples are Facebook, Slack and Whatsapp. These IT solutions were used to discuss answers to assignments, among others. If we were to implement these into the new ELE, we have to investigate their concrete effect on student goals, as stated in \todo{reference to student goals!}
+
+	The \rreport showed that teachers only use the basic functionality of Blackboard. We identified what basic functionality entails, which can be read in \todo{Reference to essential functionality section}. The interviews showed that all students knew about, and used the essential functionalities. Some students also used the more advanced functionalities. As already noted, students only use Blackboard, when their teacher uses Blackboard. We can hypothesize that if a teacher does not use the more advanced functionality (i.e. message boards), student wont either. Our interview data is not extensive enough to confirm or disprove this hypothesis. We also did not ask the right questions. 
+	
+       \todo{Also privacy! Integration with other IT systems within the UvA, i.e. information integrity. (Organiztional and techical constraints)}
+	
+	The UvA consists of many different departments (Amsterdam University College, Department of Medicine, Department of Law, Department of Sciences among others). In the \rreport it is stated that there are significant differences in the usage of Blackboard among different departments. The diversity of education is one thing to take into account. Raquel Benbunan-Fich \cite{improveEducationWithIt} identifies two models of content transmission: the objectivist and constructivism model. The first is classified by the typical classroom example, where a teacher conveys knowledge to students as a one-way stream of information. For the latter, knowledge emerges through peer interaction, evaluation and cooperation. For each model different model there are different IT solutions. The first model relies more on sharing content, the second on communication channels. As mentioned before, students already make extensive use of communication channels without Blackboard. \\
+ \todo{The domain properties that are necessary for
+		the software-to-be to work properly.} 
+	
+	For the new ELE we will assume that students who have to use the system to pass their courses, will use the system, even if the new ELE has usability issues. These usability issues can be of the same order of magnitude as the usability issues Blackboard has. See \todo{Ref to usability issues} for a list of issues we found. 
+	
+
 \end{itemize}
 
 \chapter{Evaluation and Agreement}
@@ -235,10 +199,9 @@ The following facts are from a meta-study in \cite{ict_study}. The implications 
 	viewpoints and different expectations. For instance \textit{Usability vs Goal of students OR goals of UvA vs goals of students.}
 	\item There are risks associated with the system that is being shaped. They must be assessed
 	and resolved. {Privacy, accessibility of tools, and their reliability.}
-	\item \textbf{The alternative options} identified during elicitation must be compared with regard to
-	quality objectives and risks, and best options must be selected on that basis. \todo{Do we have alternative options?}
-	\item Requirements prioritization is often necessary for a number of reasons: 
-	\begin{itemize}
+	\item \textbf{The alternative options} identified during elicitation must be c
+                                                                                selected on that basis. \todo{Do we have alternative options?}
+	\item Requirements prioritization is often necessary for a number of reasons: \begin{itemize}
 		\item Favouring higher-priority requirements is a standard way of resolving conflicts.
 		\item Dropping lower-priority requirements provides a way of integrating multiple wishlists
 		that would together exceed budgets and deadlines.
@@ -259,6 +222,41 @@ of likely variants and revisions, acceptance test data and cost figures. The RD 
 complemented by annexes such as the preliminary system proposal after domain understanding,
 elicitation and evaluation, to provide the context and rationale for decisions taken, as well as
 technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 4 and 5, according to above text.}
+
+\chapter{Essential stakeholder goals}\label{stakeholder_goals}
+During this phase we set out to gather the essential stakeholder goals. Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
+
+\section{UvA}
+\label{uva_goals}
+Taken from the core values of the UvA is the following: \\
+\textit{Engagement for the UvA and its staff implies the age-old obligation – based on a privileged academic position – to use acquired knowledge and insights to play an ongoing, prominent and visible role in the social debate. This value also reveals that the UvA is committed to the maximum development of the individual talents of its staff and students. Additionally, the choice of this core value suggests a strong mutual involvement between students, staff, employees, study programmes, institutes and the institution as a whole. And, lastly, there is an important link between academia and society. The UvA is located in historical and modern buildings throughout the city of Amsterdam, thus making it an integral part of the city.}
+
+Important goals are:
+\begin{enumerate}
+	\item The UvA is committed to the maximum development of the individual talents of its staff and students.\cite{uva_mission}
+	\item The UvA strives for a strong mutual involvement between students, staff, employees, study programs, institutes and the institution as a whole.\cite{uva_mission}
+	\item Evidenced-based ICT innovations are incorporated into the UvA’s education policy.\cite{uva_strategic_plan} \begin{enumerate}
+		\item (Strategy): The use of Open Educational Resources – as part of blended curricula – will be one of the educational innovations implemented. ICT policy will be tailored in part to support the education process. 
+	\end{enumerate}
+	\item A modular Lifelong Learning programme is developed.\cite{uva_strategic_plan} \begin{enumerate}
+		\item (Strategy): This programme will draw on the online
+		courses in our blended curricula. 
+	\end{enumerate}
+\end{enumerate}
+
+\section{Teacher}
+Taken from the UvA goal and by talking to teachers.
+\begin{enumerate}
+	\item Develop individual skills.
+	\item Convey knowledge to students.
+\end{enumerate}
+
+\section{student}
+The student goals still need to be confirmed by finding a relevant paper. As a result of our elicitations we believe these are the broad goals of students.
+\begin{enumerate}
+	\item Optimally develop one's personal and academic skills.	
+	\item Obtain diploma.
+\end{enumerate}
 
 \chapter{Domain understanding}
 \label{ch:understanding} 
@@ -317,10 +315,10 @@ We can distil this into a single feature list:
 We deem this preliminary feature list as quite reliable and representative for the essential use of Blackboard by teachers and students. The sources of this information are the elicitations that we performed but also our own experience, and talking to the users (students and teachers).
 
 We wanted to quantify this data with the actual use as logged by the ICT department of the UvA, but our request for information has been rejected.
-
+                                                                                                                                               
 
 \section{To what extend does the current Blackboard system support the UvA goals?} \label{uva_goal_question}
-In order to answer this question we have divided it into two sub-questions. As the main goal of the UvA (see \ref{ch:stakeholder_goals}: \nameref{ch:stakeholder_goals}) could be divided into sub-goals for its staff and students we have done the same with this question to make it easier to answer.
+In order to answer this question we have divided it into two sub-questions. As the main goal of the UvA (see \ref{stakeholder_goals}: \nameref{stakeholder_goals}) could be divided into sub-goals for its staff and students we have done the same with this question to make it easier to answer.
 
 \subsection{To what extends does the system support the goals of the teachers?}
 By reasoning about how teachers develop their skills, from personal experience by looking around in the UvA and talking to teachers we can answer this question for the staff:
