@@ -338,19 +338,11 @@ According to these findings we believe that a system where the core functionalit
 \end{itemize}
 
 \chapter{Specification and Documentation}
-The resulting product is the requirements document (RD). In this document, the objectives,
-concept definitions, relevant domain properties, responsibilities, system requirements, software
-requirements and environmental assumptions are specified precisely and organized into a
-coherent structure. These specifications form the core of the RD. Satisfaction arguments should
-appear there as well (see Section 1.1.4.). Other sections in the RD may include a description
-of likely variants and revisions, acceptance test data and cost figures. The RD may also be
-complemented by annexes such as the preliminary system proposal after domain understanding,
-elicitation and evaluation, to provide the context and rationale for decisions taken, as well as
-technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 4 and 5, according to above text.}
+This section concludes our Requirements Document by listing the requirements that we found, next we state our vision for the successor of Blackboard according to these requirements and finally we argue why our findings are reliable or not reliable.
 
-
-
-\section{Requirement: Share documents}
+\section{Requirements}
+According tot he goals that the new system must adhere to we have created \emph{goal contribution trees} \cite{RE_book}. We have subdivided each goal into sub-goals until each goal only affected one agent, these are the requirements. Thus the leafs of each tree is a requirement for his parent goal (unless stated otherwise).
+\subsection{Requirement: Share documents}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{images/ShareDocuments.png}
@@ -359,7 +351,7 @@ technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 
 \end{figure}
 
 \clearpage
-\section{Requirement: Hand in assignments}
+\subsection{Requirement: Hand in assignments}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{images/HandInAssignment.png}
@@ -368,7 +360,7 @@ technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 
 \end{figure}
 
 \clearpage
-\section{Requirement: Publish announcements}
+\subsection{Requirement: Publish announcements}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{images/PublishAnnouncements.png}
@@ -377,7 +369,7 @@ technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 
 \end{figure}
 
 \clearpage
-\section{Requirement: Manage student groups}
+\subsection{Requirement: Manage student groups}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=1\linewidth]{images/ManageStudentGroups.png}
@@ -385,7 +377,10 @@ technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 
 	\label{fig:goal_manage_student_groups}
 \end{figure}
 
+\section{Vision}
+According to our findings as laid out in this document we believe that the current Blackboard already offers too much functionality. As we saw in \emph{\ref{ch:elicitation}: \nameref{ch:elicitation}}
 
+\clearpage
 \section{Reliability}
 The sources of most of our information are the elicitations (unless stated otherwise) that we performed, but also our own experience, and talking to the users (students and teachers).
 
