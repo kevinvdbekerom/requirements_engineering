@@ -263,10 +263,6 @@ complemented by annexes such as the preliminary system proposal after domain und
 elicitation and evaluation, to provide the context and rationale for decisions taken, as well as
 technical annexes about the domain. \todo{Refactor RD, after filling in Chapter 4 and 5, according to above text.}
 
-\chapter{Essential stakeholder goals}\label{stakeholder_goals}
-During this phase we set out to gather the essential stakeholder goals. Each stakeholder has a specific goal, be it something that has to do with the system or something entirely different. Our aim is to identify these goals in order to understand how the ELE of the UvA can assist in reaching these goals and which minimal features are needed to this end.
-
-
 
 \chapter{Domain understanding}
 \label{ch:understanding} 
@@ -414,6 +410,21 @@ Because of this we will focus only on the essential features of the ELE, the (un
 
 \chapter{Requirements}
 In this chapter we will start by forming high level goals the new system has to meet. These are distilled from our domain knowledge and understanding, combined with the goals of the different stakeholders. Unreachable goals are filtered out. From these goals we will recursively state subgoals until we reach goals satisfying a single actor (stakeholder). We call this a leaf of the goal-tree. All leaves of the goal-tree are requirements for the new system, according to Van Lamsweerde \cite{RE_book}.
+
+\chapter{Recommendations}
+\todo{refactor into different chapter}
+The following questions where not investigated due to time constrainst. However, we believe these questions are very important due to reasons explained below. We provide suggestions on how to obtain the answers to these questions, such that the \textit{Werkgroep Toekomst Elektronische Leeromgeving} can implement our methods and obtain the correct information, i.e. relevant to stakeholder and business goals.
+
+\section{Does Blackboard improve learning?}
+The question can be made concrete by asking:\textbf{ What is the relation between Blackboard usage (in percentage) and student's grades?} \textit{Werkgroep Toekomst Elektronische Leeromgeving} already has the Blackboard usage data. They simply need to combine this data with student grades (link course average grades to course Blackboard usage). \\
+
+In fact, by linking average course grades to usage, we can even answer other important questions:
+\begin{enumerate}
+	\item Does usage of advanced Blackboard functionality (e.g. Adaptive Rules) warrant an increase in education quality, measured by student grades? We can hypothesize that is does warrant an increase in education quality, and try to reject the null hypothesis.
+	\item Are there big differences between courses (average grades) when Blackboard usage is about the same, but the courses differ in being more constructive (focussed on peer interaction) or objective (classical lecture room idiom, teacher conveys knowledge as one-way stream of information), see \cite{improveEducationWithIt}. 
+\end{enumerate}
+
+Important to note is that we need to take into account the difficulty of each different course. We cannot simply compare the average grades of two courses since they will differ in difficulty. A remedy for this is look for courses that have an increase or decrease in Blackboard usage over the years. 
 
 
 \chapter{References}
