@@ -193,6 +193,7 @@ We gathered no, or not enough, information about the other stakeholders to draw 
 
 
 \section{Domain facts}
+\label{domain_facts}
 \begin{enumerate}                                                           
 	\item Formative feedback can help students improve their work.\cite{ict_study} \textit{BB does not offer formative feedback, this is merely a responsibility of the teacher.}
 	\item Should be clear link between learning goals (of a course) and the ICT solution. If the ICT solution is merely a means to reach a goal it will not improve learning. \cite{ict_study}\todo{Blackboard is a means to achieve an end. e.g. need information to pass course. Info aonly on BB. Need to hand in assignments. Sometimes only on BB.  Verwerken als antwoord op een van onze vragen. Ref naar deze domain rule. Students gebruiken BB alleen als teacher dit ook gebruikt.}
@@ -271,12 +272,6 @@ To answer this question we first set out to find different characteristics of us
 	\item Irrespective of the degree of intrinsic knowledge the student seeks, he uses other sources of information than those solely provided by their teacher (be it through Blackboard or other means).
 \end{itemize}
 So we found that irrespective of the characteristics regarding study goals of the student, he independently uses resources outside of the ELE to get additional information to help achieve these goals.
-
-\section{What factors in education improve student learning?}
-\subsection{Does the usage of Blackboard save the teachers time as compared to organizing the course themselves (file sharing, group building, assignment checking for plagiarism, etc)?}
-\label{ss_1}
-\subsection{Will teachers who spent (relatively) less time on bureaucracy improve student learning, i.e. perform activities in the \textit{education improvement factors} set?}
-\label{ss_2}
 
 \section{opportunities arising from technology}
 During the interviews we found out that students use communication channels not integrated into Blackboard. Named examples are Facebook, Slack and Whatsapp. These IT solutions were used to discuss answers to assignments, among others. If we were to implement these into the new ELE, we have to investigate their concrete effect on student goals, as stated in \ref{ch:stakeholder_goals}: \nameref{ch:stakeholder_goals}.
@@ -385,7 +380,6 @@ Because of this we will focus only on the essential features of the ELE, the (un
 In this chapter we will start by forming high level goals the new system has to meet. These are distilled from our domain knowledge and understanding, combined with the goals of the different stakeholders. Unreachable goals are filtered out. From these goals we will recursively state subgoals until we reach goals satisfying a single actor (stakeholder). We call this a leaf of the goal-tree. All leaves of the goal-tree are requirements for the new system, according to Van Lamsweerde \cite{RE_book}.
 
 \chapter{Recommendations}
-\todo{refactor into different chapter}
 The following questions where not investigated due to time constrainst. However, we believe these questions are very important due to reasons explained below. We provide suggestions on how to obtain the answers to these questions, such that the \textit{Werkgroep Toekomst Elektronische Leeromgeving} can implement our methods and obtain the correct information, i.e. relevant to stakeholder and business goals.
 
 \section{Does Blackboard improve learning?}
@@ -398,6 +392,25 @@ In fact, by linking average course grades to usage, we can even answer other imp
 \end{enumerate}
 
 Important to note is that we need to take into account the difficulty of each different course. We cannot simply compare the average grades of two courses since they will differ in difficulty. A remedy for this is look for courses that have an increase or decrease in Blackboard usage over the years. 
+
+\section{What factors in education improve student learning?}
+See Section \ref{domain_facts} for the domain facts we gathered. One important finding was that instant feedback contributes to student learning (higher grades). We did however not have enough time to investigate more factors that can increase student learning. 
+
+To answer the above question we need to answer to subquestions. Combining the information of both is the last step that should be taken. Ultimately, we want to know to what extent Blackboard is contributing to the teacher goal to improve him/her self (provide better teaching), and the UvA goal of better education (measured in student grades).
+ 
+\subsection{Does the usage of Blackboard save the teachers time as compared to organizing the course themselves (file sharing, group building, assignment checking for plagiarism, etc)?}
+\label{ss_1}
+How much time does a teacher not using Blackboard on course organizational tasks, as compared to a teacher using Blackboard? Can we identify patterns. One of the goals of an ELE is to reduce the workload of teachers. Therefore we construct the null hypothesis: \\
+$H_0$: Usage of Blackboard saves teachers 0 hours.\\
+$H_1$: Usage of Blackboard saves teachers $10\%$ of their normal workload in hours. \\
+
+If we can reject the null hypothesis (there is a significant reduction in workload by using Blackboard) we can combine this finding with the result of the next question. 
+
+\subsection{Will teachers who spent (relatively) less time on bureaucracy improve student learning, i.e. perform activities in the \textit{education improvement factors} set?}
+\label{ss_2}
+
+By interviewing find the activities teachers employ, and what extra activities they do when they have more time. Identify all the activities in the education improvement factors set. 
+
 
 
 \chapter{References}
