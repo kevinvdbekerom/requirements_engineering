@@ -342,7 +342,7 @@ According to these findings we believe that a system where the core functionalit
 This section concludes our Requirements Document by listing the requirements that we found, next we state our vision for the successor of Blackboard according to these requirements and finally we argue why our findings are reliable or not reliable.
 
 \section{Requirements}
-According tot he goals that the new system must adhere to we have created \emph{goal contribution trees} \cite{RE_book}. We have subdivided each goal into sub-goals until each goal only affected one agent, these are the requirements. Thus the leafs of each tree is a requirement for his parent goal (unless stated otherwise).
+According to the goals that the new system must adhere to we have created \emph{goal contribution trees} \cite{RE_book}. We have subdivided each goal into sub-goals until each goal only affected one agent, these are the requirements. Thus the leafs of each tree is a requirement for his parent goal (unless stated otherwise).
 \subsection{Requirement: Share documents}
 \begin{figure}[h!]
 	\centering
@@ -350,6 +350,12 @@ According tot he goals that the new system must adhere to we have created \emph{
 	\caption{Share documents goal contributions.}
 	\label{fig:goal_share_documents}
 \end{figure}
+
+Quick notes\\
+\begin{itemize}
+	\item \textit{TeacherMakeFileStructure}: We did not find that a different file strucutre negatively affects the goal of stakeholders. We therefore decided to keep this flexibility. When we enforce a file structure we limit ourselves in possible ELE tools, while this is not strictly necessary.
+	\item These requirements can already be satisfied with a simple tool, see Section \ref{domain_facts}. During the domain understanding and elicitation phase we found that the amount of usage of an IT system determines its effectiveness. If the IT system is not used correctly it has absolutely no effect. We advocate simplicity.
+\end{itemize}
 
 \clearpage
 \subsection{Requirement: Hand in assignments}
@@ -413,24 +419,6 @@ In conclusion our findings are not very reliable because:
 	\item Based some data on own experience, and that of fellow students
 \end{itemize}
 We only learned later in the course how to avoid above examples. If we would have the time and resources to properly interview enough people, and quantify the data with proper research this would strengthen the reliability of the conclusion.
-
-
-
-
-
-
-
-
-
-
-\chapter{Negotiation}
-As we found in \emph{\ref{ch:understanding} \nameref{ch:understanding}} a system like Blackboard does not support the UvA goals, it is merely a tool that staff and students use to achieve their goals. Moreover the UvA objectives that relate to the use of ICT are defined in such an ambiguous way that any system could satisfy them with little effort.
-
-Because of this we will focus only on the essential features of the ELE, the (un)usability of the system and the minimum system that will support this. Because of the workable usability problems that we found (see \ref{s_1}) we believe that a system which integrates all the essential features in a single system is not required. It can be a plus but it is not a requirement if other requirements such as cost (which we did not research) ar deemed more important.
-
-
-\chapter{Requirements}
-In this chapter we will start by forming high level goals the new system has to meet. These are distilled from our domain knowledge and understanding, combined with the goals of the different stakeholders. Unreachable goals are filtered out. From these goals we will recursively state subgoals until we reach goals satisfying a single actor (stakeholder). We call this a leaf of the goal-tree. All leaves of the goal-tree are requirements for the new system, according to Van Lamsweerde \cite{RE_book}.
 
 \chapter{Recommendations}
 \todo{refactor into different chapter}
